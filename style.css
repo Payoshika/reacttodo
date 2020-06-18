@@ -1,0 +1,11 @@
+body {
+  font-family: helvetica;
+}
+.task-content{
+  width:30rem;
+  background-color: #ddf3f5;
+}
+
+.new-task {
+  width:30rem;
+}
