@@ -149,18 +149,16 @@ class App extends React.Component{
           <h2>Todo List for Today</h2>
         </div>
         <div className="col-12 d-flex flex-column justify-content-center">
-          <React.Fragment>
-            <FilterDisplay filter={this.state.filter} taskToggle={this.taskToggle}/>
-            <div className="d-flex flex-column justify-content-center align-items-center my-2">{showTask}</div>
-            <div className="d-flex justify-content-center align-items-center my-2">
-              <div className="new-task d-flex justify-content-end">
-                <div className="input-group input-group-lg d-flex align-items-center">
-                  <input className="input-area form-control input-lg my-2 mx-2" type="text" value={this.state.newTask} onChange={this.taskInput}/>
-                </div>
-                <button className="btn btn-info my-2" onClick={this.addTask}>add</button>
+          <FilterDisplay filter={this.state.filter} taskToggle={this.taskToggle}/>
+          <div className="d-flex flex-column justify-content-center align-items-center my-2">{showTask}</div>
+          <div className="d-flex justify-content-center align-items-center my-2">
+            <div className="new-task d-flex justify-content-end">
+              <div className="input-group input-group-lg d-flex align-items-center">
+                <input className="input-area form-control input-lg my-2 mx-2" type="text" value={this.state.newTask} onChange={this.taskInput}/>
               </div>
+              <button className="btn btn-info my-2" onClick={this.addTask}>add</button>
             </div>
-          </React.Fragment>
+          </div>
         </div>
       </div>
     </div>
